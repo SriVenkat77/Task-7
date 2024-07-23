@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 (2)</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="survey">
+        <h1>Survey Form</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="write">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" class="write">
+            </div>
+            <div class="form-group">
+                <label>Gender</label><br>
+                <div class="RA1">
+                    <input type="radio" id="male" name="gender"><label for="male"> Male </label><br>
+                    <input type="radio" id="female" name="gender"><label for="female"> Female </label><br>
+                    <input type="radio" id="transgender" name="gender"><label for="transgender"> Transgender </label><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="monthly-income">Monthly Income</label>
+                <select id="monthly-income">
+                    <option value="< 30,000"> Less than 30,000</option>
+                    <option value="< 60,000"> 30,000 < 60,000</option>
+                    <option value="< 1,00,000"> 60,000 < 1,00,000</option>
+                    <option value="> 1,00,000"> More than 1,00,000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Have you ever had online shopping?</label><br>
+                <div class="RA1">
+                    <input type="radio" id="shopping-yes" name="experience"><label for="shopping-yes"> Yes </label><br>
+                    <input type="radio" id="shopping-no" name="experience"><label for="shopping-no"> No </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="frequency">How many times did you have online shopping during the last year?</label>
+                <select id="frequency">
+                    <option>Very Frequently</option>
+                    <option>Frequently</option>
+                    <option>Somewhat Frequently</option>
+                    <option>Not too Often</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="commodity">What type of commodity did you purchase through online shopping?</label>
+                <input type="text" id="commodity">
+            </div>
+            <div class="form-group">
+                <label>Have you felt any problem while conducting an online purchase?</label><br>
+                <div class="RA1">
+                    <input type="radio" id="problem-yes" name="purchase-problem"><label for="problem-yes"> Yes </label><br>
+                    <input type="radio" id="problem-no" name="purchase-problem"><label for="problem-no"> No </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>If yes, what kind of problem?</label><br>
+                <div class="RA1">
+                    <input type="checkbox" id="delay" name="problem"><label for="delay">Delay in delivery</label><br>
+                    <input type="checkbox" id="damage" name="problem"><label for="damage">Product Damage</label><br>
+                    <input type="checkbox" id="cheap-quality" name="problem"><label for="cheap-quality">Cheap quality of product</label><br>
+                    <input type="checkbox" id="non-delivery" name="problem"><label for="non-delivery">Non-delivery</label><br>
+                    <input type="checkbox" id="other" name="problem"><label for="other">Others</label>
+                </div>
+                <label for="problem-description">Please Specify</label>
+                <textarea id="problem-description" rows="2" cols="20" placeholder="Feel Free to Address"></textarea>
+            </div>
+            <div class="form-group">
+                <label>If you never had online shopping, please specify the reason</label><br>
+                <div class="RA1">
+                    <input type="checkbox" id="no-knowledge" name="reason"><label for="no-knowledge">I don't know about online shopping</label><br>
+                    <input type="checkbox" id="credit-risk" name="reason"><label for="credit-risk">Risk of credit card transactions</label><br>
+                    <input type="checkbox" id="internet-illiteracy" name="reason"><label for="internet-illiteracy">Internet illiteracy</label><br>
+                    <input type="checkbox" id="identity-theft" name="reason"><label for="identity-theft">Risk of identity theft</label><br>
+                    <input type="checkbox" id="other-reasons" name="reason"><label for="other-reasons">Other Reasons</label>
+                </div>
+                <label for="reason-description">Please Specify</label>
+                <textarea id="reason-description" rows="2" cols="20" placeholder="Feel Free to Address"></textarea>
+            </div>
+            <div class="form-group">
+                <label>How often do you use the internet every day?</label><br>
+                <div class="RA1">
+                    <input type="checkbox" id="less-than-hour" name="internet-usage"><label for="less-than-hour">Less than one hour</label><br>
+                    <input type="checkbox" id="one-to-two" name="internet-usage"><label for="one-to-two">1-2 hours</label><br>
+                    <input type="checkbox" id="two-to-three" name="internet-usage"><label for="two-to-three">2-3 hours</label><br>
+                    <input type="checkbox" id="three-to-four" name="internet-usage"><label for="three-to-four">3-4 hours</label><br>
+                    <input type="checkbox" id="more-than-four" name="internet-usage"><label for="more-than-four">More than 4 hours</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="shopping-frequency">How often do you use the internet for shopping?</label>
+                <select id="shopping-frequency">
+                    <option>Very often</option>
+                    <option>Often</option>
+                    <option>Sometimes</option>
+                    <option>Rarely</option>
+                    <option>Never</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Assuming that you intend to conduct online shopping, which of these purchases would you make on the internet?</label>
+                <table class="products">
+                    <tr>
+                        <th>Category</th>
+                        <th colspan="2">Response</th>  
+                    </tr>
+                    <tr>
+                        <td>Clothes/Shoes</td>
+                        <td><input type="radio" id="clothes-yes" name="clothes"><label for="clothes-yes"> Yes </label></td>
+                        <td><input type="radio" id="clothes-no" name="clothes"><label for="clothes-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Cosmetic/Jewelry</td>
+                        <td><input type="radio" id="cosmetic-yes" name="cosmetic"><label for="cosmetic-yes"> Yes </label></td>
+                        <td><input type="radio" id="cosmetic-no" name="cosmetic"><label for="cosmetic-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>CDs/Book</td>
+                        <td><input type="radio" id="cds-yes" name="cds"><label for="cds-yes"> Yes </label></td>
+                        <td><input type="radio" id="cds-no" name="cds"><label for="cds-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Household</td>
+                        <td><input type="radio" id="household-yes" name="household"><label for="household-yes"> Yes </label></td>
+                        <td><input type="radio" id="household-no" name="household"><label for="household-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td><input type="radio" id="groceries-yes" name="groceries"><label for="groceries-yes"> Yes </label></td>
+                        <td><input type="radio" id="groceries-no" name="groceries"><label for="groceries-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Toys</td>
+                        <td><input type="radio" id="toys-yes" name="toys"><label for="toys-yes"> Yes </label></td>
+                        <td><input type="radio" id="toys-no" name="toys"><label for="toys-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Movies/Theater tickets</td>
+                        <td><input type="radio" id="movies-yes" name="movies"><label for="movies-yes"> Yes </label></td>
+                        <td><input type="radio" id="movies-no" name="movies"><label for="movies-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Hotel reservations</td>
+                        <td><input type="radio" id="hotel-yes" name="hotel"><label for="hotel-yes"> Yes </label></td>
+                        <td><input type="radio" id="hotel-no" name="hotel"><label for="hotel-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Airplane/railway ticket</td>
+                        <td><input type="radio" id="airplane-yes" name="airplane"><label for="airplane-yes"> Yes </label></td>
+                        <td><input type="radio" id="airplane-no" name="airplane"><label for="airplane-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Computer products</td>
+                        <td><input type="radio" id="computer-yes" name="computer"><label for="computer-yes"> Yes </label></td>
+                        <td><input type="radio" id="computer-no" name="computer"><label for="computer-no"> No </label></td>
+                    </tr>
+                    <tr>
+                        <td>Payment transactions</td>
+                        <td><input type="radio" id="payment-yes" name="payment"><label for="payment-yes"> Yes </label></td>
+                        <td><input type="radio" id="payment-no" name="payment"><label for="payment-no"> No </label></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label>Select an approximate maximum amount you would spend per year on online purchase?</label><br>
+                <div class="RA1">
+                    <input type="radio" id="less-5000" name="spend"><label for="less-5000">Less than 5,000</label><br>
+                    <input type="radio" id="5000-20000" name="spend"><label for="5000-20000">5,000-20,000</label><br>
+                    <input type="radio" id="20000-35000" name="spend"><label for="20000-35000">20,000-35,000</label><br>
+                    <input type="radio" id="35000-50000" name="spend"><label for="35000-50000">35,000-50,000</label><br>
+                    <input type="radio" id="more-50000" name="spend"><label for="more-50000">More than 50,000</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>How Satisfied are you with?</label>
+                <select id="satisfaction">
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unsatisfied">Unsatisfied</option>
+                    <option value="very-unsatisfied">Very Unsatisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Overall, how would you rate your experience with us?</label><br>
+                <div class="rating">
+                    <input type="radio" id="rating1" name="rating" value="5"><label for="rating1"><i class="fa-regular fa-star"></i></label>
+                    <input type="radio" id="rating2" name="rating" value="4"><label for="rating2"><i class="fa-regular fa-star"></i></label>
+                    <input type="radio" id="rating3" name="rating" value="3"><label for="rating3"><i class="fa-regular fa-star"></i></label>
+                    <input type="radio" id="rating4" name="rating" value="2"><label for="rating4"><i class="fa-regular fa-star"></i></label>
+                    <input type="radio" id="rating5" name="rating" value="1"><label for="rating5"><i class="fa-regular fa-star"></i></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments or Suggestions</label>
+                <textarea id="comments" rows="4" cols="20" placeholder="Feel Free to Address"></textarea>
+            </div>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
